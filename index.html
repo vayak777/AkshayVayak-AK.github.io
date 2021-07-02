@@ -1,0 +1,1288 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Akshay Vayak</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap" rel="stylesheet">
+	<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+    body{
+        height: 800px;
+        width: 1500px;
+        font-family: Montserrat, sans-serif;
+        color: #eee;
+        background-image: url("https://image.freepik.com/free-vector/ black-wallpaper-with-motion-lines-background_1017-30151.jpg");
+        background-repeat: no-repeat;
+        background-size: 1520px 800px;
+        position: absolute;
+    }
+    .header{
+        height: 50px;
+        width: 100%;
+        color: white;
+        margin-top: 30px;
+        scroll-behavior: smooth;
+    }
+    .nav ul{
+        text-align: right;
+    }
+    .nav ul li{
+        list-style: none;
+        display: inline-block;
+        padding: 5px;
+    }
+    .nav ul li a{
+        color: white;
+        text-decoration: none;
+        padding: 4px 12px;
+        font-size: 25px;
+        font-family:"Gill Sans", sans-serif;
+        transition-duration: 0s;
+    }
+    .nav ul li a::after{
+        content: '';
+        width: 0%;
+        height: 2px;
+        background: white;
+        display: block;
+        margin: auto;
+        transition: 0.9s;
+    }
+    .nav ul li a:hover{
+        color: white;
+    }
+    .nav ul li a:hover::after{
+        width: 110%;
+    }
+    .mn {
+        margin-top: 300px;
+        justify-content: center;
+        align-items: center;
+    }
+    .mn p {
+        font-size: 48px;
+        padding: 8px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+    .mn p span.typed-text {
+        font-weight: normal;
+        color: #dd7732;
+    }
+    .mn p span.cursor {
+        display: inline-block;
+        background-color: #ccc;
+        margin-left: 0.1rem;
+        width: 3px;
+        animation: blink 1s infinite;
+    }
+    .mn p span.cursor.typing{
+        animation: none;
+    }
+    @keyframes blink {
+        0%  { background-color: #ccc; }
+        49% { background-color: #ccc; }
+        50% { background-color: transparent; }
+        99% { background-color: transparent; }
+        100%  { background-color: #ccc; }
+    }
+    .logo{
+    	margin-left: 1190px;
+        margin-top: 100px;
+    }
+    .logo .fa {
+        padding: 20px;
+        font-size: 15px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        border:1px solid black;
+    }  
+    .logo .fa:hover {
+        opacity: 0.7;
+    }
+    .icon{
+        margin-left: -150px;
+        margin-top: -20px;
+    }
+    .icon .fa {
+        padding: 20px;
+        font-size: 20px;
+        width: 60px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        margin-left: 0px;
+    }  
+    .icon .fa:hover {
+        opacity: 0.7;
+    }
+    .logo .fa-facebook {
+        background: #3B5998;
+        color: white;
+    }
+    .logo .fa-linkedin {
+        background: #007bb5;
+        color: white;
+    }
+    .logo .fa-twitter {
+        background: #55ACEE;
+        color: white;
+    }
+    .logo .fa-instagram {
+    background: #125688;
+    color: white;
+    }
+    .logo .fa-youtube {
+    background: #bb0000;
+    color: white;
+    }
+    .logo .fa-snapchat-ghost {
+    background: #fffc00;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+    .icon .fa-facebook {
+        font-size: 30px;
+        color: black;
+    }
+    .icon .fa-linkedin {
+        font-size: 30px;
+        color: black;
+    }
+    .icon .fa-twitter {
+        font-size: 30px;
+        color: black;
+    }
+    .icon .fa-instagram {
+        font-size: 30px;
+        color: black;
+    }
+    .icon .fa-youtube {
+        font-size: 30px;
+        color: black;
+    }
+    .icon .fa-snapchat-ghost {
+        font-size: 30px;
+        color: black;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+    .aboutme{
+        height: 950px;
+        width:1520px;
+        border:2px solid white;
+        margin-top: 55px;
+        background-image: url("https://wallpaperaccess.com/full/732259.jpg");
+        background-repeat: no-repeat;
+        background-size: 1520px 950px;
+        overflow: hidden;
+    }
+    .aboutme li{
+        text-align: center;
+        color:black;
+        font-size: 40px;
+        
+    }
+    section{
+        height:800px;
+        width: 1250px;
+        border:4px solid silver;
+        color: black;
+        margin-top: 30px;
+        margin-left: 150px;
+        margin-bottom: 100px;
+        background-color: LightSteelBlue;
+    }
+    section img{
+        height:80px;
+        width:80px;
+        margin-left: 580px;
+    }
+    section ol{
+        text-align: center;
+        font-size: 20px;
+    }
+    .msc{
+        height: 200px;
+        width: 1100px;
+        margin-left: 90px;
+        margin-top: 10px;
+        background-color: CadetBlue;
+        position: relative;
+    }
+    .college{
+        height: 200px;
+        width: 1100px;
+        background-color: AntiqueWhite;
+        margin-left: 90px;
+        margin-top: 20px;
+        position: relative;
+    }
+    .web{
+        height: 200px;
+        width: 1100px;
+        background-color: BurlyWood;
+        margin-left: 90px;
+        margin-top: 20px;
+        position: relative;
+    }
+    .msc img{
+        height: 100%;
+        width:100%;
+        margin-left: 0px;
+    }
+    .overlay{
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        right: 0;
+        background-color: CadetBlue;
+        overflow: hidden;
+        width: 100%;
+        height: 0;
+        transition: .5s ease;
+    }
+    .text{
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    .msc:hover .overlay{
+        bottom: 0;
+        height: 100%;
+    }
+    .college img{
+        height: 100%;
+        width:100%;
+        margin-left: 0px;
+    }
+    .college:hover .overlay{
+        bottom: 0;
+        height: 100%;
+    }
+    .web img{
+        height: 100%;
+        width:100%;
+        margin-left: 0px;
+    }
+    .web:hover .overlay{
+        bottom: 0;
+        height: 100%;
+    }
+    .text button{
+        border: 2px solid black;
+        height:30px;
+        width: 80px;
+        font-size: 20px;
+        border-radius: 15px;
+    }
+    .text button:hover{
+        color:red;
+        background-color: silver;
+    }
+    .skill{
+        height: 700px;
+        width: 1520px;
+        border:2px solid black;
+        background-image: url("https://htmlcolorcodes.com/assets/images/colors/light-blue-color-solid-background-1920x1080.png");
+        background-size: 700px 1520px;
+    }
+    .start button{
+        height: 55px;
+        width: 200px;
+        margin-top: 50px;
+        margin-left: 700px;
+        font-size: 25px;
+        font-family: monospace;
+        transition-duration: 1s;
+    }
+    .start button:hover{
+        background: silver;
+        border:1px solid black;
+    }
+    span {
+        content: "\2193";
+    }
+    .skill figure{
+        margin-left: 100px;
+        margin-top: 50px;
+        width: 250px;
+        color: black;
+        font-size: 40px;
+        border-bottom: 2px solid black;
+    }
+    .html{
+        margin-top: 50px;
+        font-size: 20px;
+        color: black;
+        margin-left: 200px;
+    }
+    .html .progress{
+        background-color: silver;
+        height: 24px;
+        width: 1200px;
+        margin-top: 10px;
+        margin-left: 0px;
+        color: white;
+        border:1px solid black;
+        border-radius: 10px;
+    }
+    .html .progress-bar{
+        background-color: RoyalBlue;
+        height: 22px;
+        border-radius: 10px;
+    }
+    .css{
+        margin-top: 50px;
+        font-size: 20px;
+        color: black;
+        margin-left: 200px;
+    }
+    .css .progress{
+        background-color: silver;
+        height: 24px;
+        width: 1200px;
+        margin-top: 10px;
+        margin-left: 0px;
+        color: white;
+        border:1px solid black;
+        border-radius: 10px;
+        border:1px solid black;
+        border-radius: 10px;
+    }
+    .css .progress-bar{
+        background-color: RoyalBlue;
+        height: 22px;
+        border-radius: 10px;
+    }
+    .js{
+        margin-top: 50px;
+        font-size: 20px;
+        color: black;
+        margin-left: 200px;
+    }
+    .js .progress{
+        background-color: silver;
+        height: 24px;
+        width: 1200px;
+        margin-top: 10px;
+        margin-left: 0px;
+        color: white;
+        border:1px solid black;
+        border-radius: 10px;
+    }
+    .js .progress-bar{
+        background-color: RoyalBlue;
+        height: 22px;
+        border-radius: 10px;
+    }
+    .ps{
+        margin-top: 50px;
+        font-size: 20px;
+        color: black;
+        margin-left: 200px;
+    }
+    .ps .progress{
+        background-color: silver;
+        height: 24px;
+        width: 1200px;
+        margin-top: 10px;
+        margin-left: 0px;
+        color: white;
+        border:1px solid black;
+        border-radius: 10px;
+    }
+    .ps .progress-bar{
+        background-color: RoyalBlue;
+        height: 22px;
+        border-radius: 10px;
+    }
+    .c{
+        margin-top: 50px;
+        font-size: 20px;
+        color: black;
+        margin-left: 200px;
+    }
+    .c .progress{
+        background-color: silver;
+        height: 24px;
+        width: 1200px;
+        margin-top: 10px;
+        margin-left: 0px;
+        color: white;
+        border:1px solid black;
+        border-radius: 10px;
+    }
+    .c .progress-bar{
+        background-color: RoyalBlue;
+        height: 22px;
+        border-radius: 10px;
+    }
+    .blog{
+        height: 1900px;
+        width: 1520px;
+        border:2px solid black;
+        background-image: url("https://cdn.crispedge.com/d4e6d9.webp");
+        background-size: 1900px 1520px; 
+    }
+    .blo{
+        font-size: 30px;
+        text-align: center;
+        color: black;
+        font-family: sans-serif;
+        border:1px solid black;
+        margin-top: 10px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .blog .name{
+        color: black;
+        font-size: 30px;
+        font-family: system-ui;
+        text-align: center;
+        margin-top: 15px;
+        height: 50px;
+    }
+    .taj img{
+        height: 500px;
+        width: 700px;
+        margin-top: 10px;
+        margin-left: 10px;
+        border:3px solid black;
+        border-radius: 15px;
+        transition-duration: 2s;
+    }
+    .taj{
+        transition-duration: 3s;
+    }
+    .taj:hover{
+        
+    }
+    .taj .essay{
+        margin-left: 750px;
+        color: black;
+        margin-top: -500px;
+        font-family: sans-serif;
+        font-size: 25px;
+        border-bottom: solid;
+    }
+    .taj p{
+        font-size: 20px;
+        font-family: 'Heebo', sans-serif;
+        margin-left: 750px;
+        color: black;
+        margin-top: 20px;
+    }
+    .red img{
+        height: 500px;
+        width: 700px;
+        margin-top: 150px;
+        margin-left: 800px;
+        border:3px solid black;
+        border-radius: 15px;
+    }
+    .red .essay{
+        margin-left: 10px;
+        color: black;
+        margin-top: -500px;
+        font-family: sans-serif;
+        font-size: 25px;
+        border-bottom: solid;
+        margin-right: 800px;
+    }
+    .red p{
+        font-size: 20px;
+        font-family: 'Heebo', sans-serif;
+        margin-left: 0px;
+        margin-right: 800px;
+        color: black;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    .gate img{
+        height: 500px;
+        width: 700px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-top: 170px;
+        border:3px solid black;
+        border-radius: 15px;
+    }
+    .blog img:hover{
+        border: 1px solid black;
+    }
+    .gate .essay{
+        margin-left: 750px;
+        color: black;
+        margin-top: -500px;
+        font-family: sans-serif;
+        font-size: 25px;
+        border-bottom: solid;
+    }
+    .gate p{
+        font-size: 20px;
+        font-family: 'Heebo', sans-serif;
+        margin-left: 750px;
+        color: black;
+        margin-top: 20px;
+    }
+    .blog button{
+        height: 40px;
+        width: 1000px;
+        text-align: center;
+        margin-left: 250px;
+        margin-top: 50px;
+        font-size: 20px;
+        border: 1px solid black;
+        border-radius: 15px;
+        font-family: math;
+    }
+    button:hover{
+        border:2px solid black;
+        color: green;
+    }
+    .contact{
+        height: 1070px;
+        width: 1520px;
+        border:2px solid black;
+        background-image: url("https://media.istockphoto.com/photos/light-green-color-toned-square-sheet-of-paper-picture-id501202668?k=6&m=501202668&s=170667a&w=0&h=UOVbjAMLQRDcgnRdXsk4gebIyg7Q-8xMvsoEQsnhKxQ=");
+        background-repeat: no-repeat;
+        background-size: 1520px 1070px;
+    }
+    .contact .me{
+        color: black;
+        font-size: 25px;
+        font-family: sans-serif;
+        margin-top: 20px;
+        margin-left: 700px;
+    }
+    .contact .mobile{
+        font-family: monospace;
+        color: black;
+        font-size: 25px;
+        margin-top: 50px;
+        margin-left: 200px;
+    }
+    .mobile img{
+        height: 50px;
+        width: 50px;
+        margin-left: 70px;
+    }
+    .contact .email{
+        font-family: monospace;
+        color: black;
+        font-size: 25px;
+        margin-top: 50px;
+        margin-left: 150px;
+    }
+    .email img{
+        margin-left: 120px;
+    }
+    .email h4{
+        margin-left: 110px;
+    }
+    .contact .add{
+        font-family: monospace;
+        color: black;
+        font-size: 25px;
+        margin-top: 50px;
+        margin-left: 150px;
+    }
+    .add h4{
+        margin-left: 100px;
+    }
+    .add img{
+        margin-left: 120px;
+    }
+    .con img{
+        margin-top: 0px;
+        margin-left: 740px;
+        height: 50px;
+        width: 50px;
+    }
+    .main{
+        height: 800px;
+        width: 700px;
+        margin-left: 700px;
+        margin-top: -600px;
+    }
+    .formdesign{
+        font-size: 25px;
+        color: black;
+        padding: 60px 0px;
+        margin-left: 0px;
+    }
+    .formdesign input{
+        height:33px;
+        width: 350px;
+        border:2px solid black;
+        border-radius: 15px;
+        font-size: 20px;
+    }
+    .massage textarea{
+        height: 150px;
+        width: 350px;
+        border:2px solid black;
+        border-radius: 6px;
+        font-size: 20px;
+        margin-top: 50px;
+        border-radius: 15px;
+    }
+    .main button{
+        margin-top: 50px;
+        height: 30px;
+        width: 200px;
+        font-size: 20px;
+        margin-left: 150px;
+        border:2px solid black;
+        border-radius: 8px;
+    }
+    .copy{
+        height: 30px;
+        width: 1523px;
+        border:2px solid black;
+        margin-left: -705px;
+        margin-top: 5px;
+        background-color: black;
+        color: white;
+    }
+    .copy .copyright{
+        text-align: center;
+    }
+    .up button{
+        height: 50px;
+        width: 50px;
+        border: 2px solid black;
+    }
+    .up button img{
+        height: 40px;
+        width: 40px;
+        text-align: center;
+        margin-left: -9px;
+        margin-top: -8px;
+    }
+    #myBtn{
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        border: none;
+        outline: none;
+        background-color: gray;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
+    }
+    #myBtn:hover {
+        background-color: white;
+    }
+    nav .fa{
+        display: none;
+        font-size: 40px;
+        height: 50px;
+        width: 50px;
+    }
+    @media(max-width: 700px){
+        body{
+            background-size: 1520px 1400px;
+        }
+        .mn{
+            width: 100%;
+        }
+        .mn p{
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        .start{
+            margin-top: 30px;
+        }
+        .nav ul{
+            text-align: center;
+        }
+        .nav ul li{
+            display: block;
+            padding-top:80px;
+        }
+        .nav{
+            position: absolute;
+            background: #2F4F4F;
+            height: 800px;
+            width: 40%;
+            top: 0;
+            left: -40%;
+            z-index: 2;
+            transition: 1s;
+        }
+        nav .fa{
+            display: block;
+            color: #fff;
+            margin: 10px;
+            font-size: 50px;
+            cursor: pointer;
+        }
+        .nav ul li a:hover::after{
+            width: 10%;
+        }
+    }
+    @media(max-width: 550px)
+    {
+        body{
+            width: 1550px;
+            height: 100vh;
+        }
+        .header{
+            height: 300px;
+        }
+        .aboutme{
+            flex-direction: column;
+        }
+        .nav{
+            height: 1000px;
+        }
+    }
+    @media(max-width: 425px){
+        body{
+            height: 100vh;
+            width: 1550px;
+            background-size: 1520px 2600px;
+        }
+        .mn{
+            margin-top: 800px;
+        }
+        .taj img{
+            display: block;
+            width: 70%;
+            margin:0px auto;
+            height: 800px;
+        }
+        .taj .essay{
+            display: block;
+            width: 70%;
+            margin:50px auto;
+            text-align: center;
+            font-size: 35px;
+        }
+        .taj p{
+            display: block;
+            width: 70%;
+            margin:50px auto;
+            text-align: center;
+            font-size: 35px;
+        }
+        .red img{
+            display: block;
+            width: 70%;
+            margin:0px auto;
+            height: 800px;
+        }
+        .red .essay{
+            display: block;
+            width: 70%;
+            margin:50px auto;
+            text-align: center;
+            font-size: 35px;
+        }
+        .red p{
+            display: block;
+            width: 70%;
+            margin:50px auto;
+            text-align: center;
+            font-size: 35px;
+        }
+        .gate img{
+            display: block;
+            width: 70%;
+            margin:0px auto;
+            height: 800px;
+        }
+        .gate .essay{
+            display: block;
+            width: 70%;
+            margin:50px auto;
+            text-align: center;
+            font-size: 35px;
+        }
+        .gate p{
+            display: block;
+            width: 70%;
+            margin:50px auto;
+            text-align: center;
+            font-size: 35px;
+        }
+        .blog{
+            height: 5600px;
+        }
+        .contact{
+            height: 2000px;
+            background-size: 1520px 2000px;
+        }
+        .contact .mobile{
+            display: block;
+            width: 100%;
+            margin: 50px auto;
+            text-align: center;
+            font-size: 35px;
+        }
+        .mobile h4{
+            margin-left: 0px;
+            font-size: 40px;
+        }
+        .mobile img{
+            margin-left: 0px;
+        }
+        .contact .email{
+            display: block;
+            width: 100%;
+            margin: 50px auto;
+            text-align: center;
+            font-size: 35px;
+        }
+        .email h4{
+            margin-left: 0px;
+            font-size: 40px;
+        }
+        .email img{
+            margin-left: 0px;
+        }
+        .contact .add{
+            display: block;
+            width: 100%;
+            margin: 50px auto;
+            text-align: center;
+            font-size: 35px;
+        }
+        .add h4{
+            margin-left: 0px;
+            font-size: 40px;
+        }
+        .add img{
+            margin-left: 0px;
+        }
+        .main{
+            height: 800px;
+            width: 100%;
+            margin-top: 0px;
+            text-align: center;
+            margin-left: 0px;
+        }
+        .formdesign{
+            font-size: 40px;
+        }
+        .formdesign input{
+            height:50px;
+            width: 600px;
+            border-radius: 50px;
+            font-size: 35px;
+        }
+        .massage{
+            font-size: 40px;
+        }
+        .massage textarea{
+            height: 150px;
+            width: 600px;
+            font-size: 25px;
+        }
+        .main button{
+            height: 50px;
+            width: 300px;
+            font-size: 25px;
+        }
+        .up button{
+            height: 120px;
+            width: 120px;
+        }
+        .up button img{
+            height: 100px;
+            width: 100px;
+        }
+        .copy{
+            margin-left: 0px;
+            height: 45px;
+            font-size: 30px;
+        }
+        .copy .copyright{
+            text-align: center;
+        }
+        .skill{
+            height: 1000px;
+            width: 1520px;
+            background-size: 1520px 1000px;
+        }
+        .html{
+            margin-top: 100px;
+        }
+        .css{
+            margin-top: 100px;
+        }
+        .js{
+            margin-top: 100px;
+        }
+        .ps{
+            margin-top: 100px;
+        }
+        .c{
+            margin-top: 100px;
+        }
+        .logo{
+            margin-top: 1050px;
+        }
+        .start button{
+            margin-top: 150px;
+        }
+    }
+    @media(max-width: 320px){
+        body{
+            height: 100vh;
+            width: 1550px;
+        }
+    }
+    @media(max-width: 425px)
+    {
+
+        .nav ul li{
+            padding-top: 150px;
+            font-size: 50px;
+            text-transform: uppercase;
+        }
+        .nav{
+            height: 2500px;
+        }
+        nav .fa{
+            margin-left: 100px;
+            font-size: 70px;
+        }
+    }
+	</style>
+</head>
+<body>
+    <div class="header" id="home">
+	    <nav>
+            <div class="nav" id="navlinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+	        	    <li><a href="#">Home</a></li>
+	        	    <li><a href="#About">About Me</a></li>
+	        	    <li><a href="#skills">Skills</a></li>
+	        	    <li><a href="#blog">Blog</a></li>
+	        	    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+	</div>
+	        <div class="mn">
+            <p>I Am a <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+            </div>
+            <div class="start">
+                <a href="#About">
+                <button>Let's Start <span>&#8595;</span></button></a>
+            </div>
+            <div class="logo">
+    	        <a href="https://www.facebook.com/akshay.vayak.3" class="fa fa-facebook"></a>
+    	        <a href="https://twitter.com/AkshayVayak" class="fa fa-twitter"></a>
+    	        <a href="https://www.instagram.com/vayak2021/" class="fa fa-instagram"></a>
+    	        <a href="https://www.youtube.com/channel/UCHoaicvqLoGvpfdhvf1VIxQ" class="fa fa-youtube"></a>
+    </div>
+    <div class="aboutme" id="About">
+        <li>
+        About Me
+        </li>
+        <section>
+            <img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-contact-512.png">
+            <ol>
+                <b>Akshay Vayak</b>
+            </ol>
+            <div class="msc">
+                <img src="http://www.anuonline.ac.in/images/courses/MSc-IT.jpg">
+                <div class="overlay">
+                    <div class="text">
+                    Hello,<br><br>
+                    I Am Student Of M.SC IT.
+                    </div>
+                </div>
+            </div>
+            <div class="college">
+                <img src="https://ksschool.org.in/img/slides/1_24.jpg">
+                <div class="overlay">
+                    <div class="text">
+                        Hello,<br><br>
+                        I AM STUDY IN KS SCHOOL OF BUSSINESS MANAGEMENT.<br><br>
+                        <a href="https://ksschool.org.in/">
+                        <button>Visit</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="web">
+                <img src="data:image/jpeg;base64,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">
+                <div class="overlay">
+                    <div class="text">
+                        Hello,<br><br>
+                        I want to be a Web developer.<br><br>
+                        This Website is my First Website.<br><br>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="skill" id="skills">
+        <figure>
+            Coding Skills
+        </figure>
+        <div class="html">
+            HTMl
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+            </div>
+        </div>
+        <div class="css">
+            CSS
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+            </div>
+        </div>
+        <div class="js">
+            Java Script
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+            </div>
+        </div>
+        <div class="ps">
+            PhotoShop
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+            </div>
+        </div>
+        <div class="c">
+            C Language
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+            </div>
+        </div>
+    </div>
+    <div class="blog" id="blog">
+        <div class="blo">Blog</div>
+        <div class="name">
+            Popular Place In India<hr><hr><hr><hr>
+        </div>
+        <div class="taj">
+            <img src="https://wallpapercave.com/wp/wp2037797.jpg">
+            <div class="essay">
+                Taj Mahal
+            </div>
+            <p><b> The Taj Mahal is a historic and the most beautiful place world. The cultural monument is located in Agra, Uttar Pradesh, India, and holds a symbol of love. This seamless beauty is constructed using white marbles and is a hotspot of tourist attraction. The Mughal Architecture represents cultural diversity prevailing in the country and is identified as UNESCO World Heritage Site the year 2007. Below this historic paradise lies the tombs of great Indian kings and queens cremated in the darkroom.<br><br>
+            The great Rabindranath Tagore refers to the Taj Mahal as ” the dream of marble.” Located on the banks of the river Yamuna, the green atmosphere surrounding the monument increases the fragrance of the environment. The monument’s view gets brightened by the beautiful moonlight dawned at night.</b></p>
+        </div>
+        <div class="red">
+            <img src="https://cdn.wallpapersafari.com/72/51/xFHkPI.jpg">
+            <div class="essay">
+                Red Fort
+            </div>
+            <p><b>The Red Fort is a historic fort in the city of Delhi (in Old Delhi) in India that served as the main residence of the Mughal Emperors. Emperor Shah Jahan commissioned construction of the Red Fort on 12 May 1638, when he decided to shift his capital from Agra to Delhi. Originally red and white, its painting is credited to architect Ustad Ahmad Lahori, who also constructed the Taj Mahal.<br><br>
+            On 15 August 1947, the first prime minister of India, Jawaharlal Nehru, raised the Indian national flag above the Lahori Gate.[1] Every year on India's Independence Day (15 August), the prime minister hoists the Indian tricolour flag at the fort's main gate and delivers a nationally broadcast speech from its ramparts.</b></p>
+        </div>
+        <div class="gate">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/28/Gateway_of_india%27s_look_in_evening.jpg">
+            <div class="essay">
+                Gateway of India
+            </div>
+            <p><b>The Gateway of India is an arch-monument built in the early twentieth century in the city of Mumbai, in the Indian state of Maharashtra. It was erected to commemorate the landing in December 1911 at Apollo Bunder, Mumbai (then Bombay) of King-Emperor George V and Queen-Empress Mary, the first British monarch to visit India. At the time of the royal visit, the gateway was not built yet, and a cardboard structure greeted the monarch. The foundation stone was laid in March 1913 for a monument built in the Indo-Saracenic style, incorporating elements of 16th-century Gujarati architecture. The final design of the monument by architect George Wittet was sanctioned only in 1914, and construction was completed in 1924. The structure is a triumphal arch made of basalt, which is 26 metres (85 feet) high.<br><br>
+            The gateway was the site of a terror attack in August 2003, when there was a bomb blast in a taxi parked in front of it. Access to the gateway was restricted after people congregated at its premises following the 2008 Mumbai terror attacks, in which the Taj Hotel opposite the gateway and other locations in its vicinity were targeted.</b></p>
+        </div>
+        <a href="https://www.google.com/travel/things-to-do?g2lb=2502548%2C2503781%2C4258168%2C4270442%2C4306835%2C4317915%2C4371335%2C4401769%2C4419364%2C4482438%2C4486153%2C4509341%2C4533882%2C4536454%2C4540819%2C4551237%2C4270859%2C4284970%2C4291517&hl=en-IN&gl=in&ssta=1&dest_mid=%2Fm%2F03rk0&dest_state_type=main&dest_src=ts&sa=X&ved=2ahUKEwjpytuZl83wAhXuwjgGHYe7CFkQuL0BMAB6BAgEEDg#ttdm=27.300803_77.299159_7&ttdmf=%252Fm%252F081jv3" target="blank">
+        <button>More Information</button></a>
+    </div>
+    <div class="contact" id="contact">
+        <div class="con">
+            <img src="us.png">
+        </div>
+        <div class="me">
+            Contact Me
+        </div>
+        <div class="mobile">
+            <img src="phone.png"><br><br>
+            <h4>Mobile Number</h4><br>
+            +91-7802927428
+        </div>
+        <div class="email">
+            <img src="email.png"><br><br>
+            <h4>Email</h4><br>
+            vayakakshay08@gmail.com
+        </div>
+        <div class="add">
+            <img src="contact.png"><br><br>
+            <h4>Address</h4><br>
+            B/401, Abhilasha Square,<br>
+            Nikol,<br>
+            Ahmedabad-382350
+        </div>
+        <div class="main">
+            <form name="RegForm" onsubmit="return validateform()">
+                <div class="formdesign">
+                Full Name: <input type="text" id="fname" value size="150" value = ""><span id="blankMsg" style="color: red;"><b></b></span>
+                <div class="formdesign">
+                Email Address: <input type="email" id="email" value size="150" value = ""><span id="mail" style="color: red;"><b></b></span>
+                <div class="formdesign">
+                Contact No: <input type="Mobile Number" id="mnum" value size="150" value = ""><span id="num" style="color: red;"><b></b></span>
+                <div class="formdesign">
+                <div class="massage">
+                    <label>
+                        Massage:
+                    </label>
+                    <textarea id="massage"></textarea><span id="massage1" style="color: red;"></span>
+                </div>
+                <button>Send Massage</button>
+        </div>
+                
+            </form>
+        </div>
+        <div class="icon">
+            <a href="https://www.facebook.com/akshay.vayak.3" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/AkshayVayak" class="fa fa-twitter"></a>
+            <a href="https://www.linkedin.com/feed/" class="fa fa-linkedin"></a>
+            <a href="https://www.youtube.com/channel/UCHoaicvqLoGvpfdhvf1VIxQ" class="fa fa-youtube"></a>
+            <a href="https://www.instagram.com/vayak2021/" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-snapchat-ghost"></a>
+            <!--<div class="up">
+                <a href="#home">
+                <img src="up.png">
+                </a>
+            </div>-->
+        </div>
+        <div class="copy">
+            <div class="copyright">
+            <p1>&copy Copyright 2021 All Drawings and Images are Copyright Protected and Owned by Akshay Vayak</p1> 
+            </div>
+        </div>
+    </div>
+    <div class="up">
+        <button onclick="topFunction()" id="myBtn" title="Go to top">
+            <img src="https://cdn.iconscout.com/icon/free/png-256/up-arrow-2206688-1853786.png">
+        </button>
+    </div>
+	<script>
+	const typedTextSpan = document.querySelector(".typed-text");
+    const cursorSpan = document.querySelector(".cursor");
+    const textArray = ["Akshay Vayak", "Web-Developer", "Programmer", "Beginner","Student of M.SC IT"];
+    const typingDelay = 200;
+    const erasingDelay = 100;
+    const newTextDelay = 2000; // Delay between current and next text
+    let textArrayIndex = 0;
+    let charIndex = 0;
+    function type() {
+      if (charIndex < textArray[textArrayIndex].length) {
+        if(!cursorSpan.classList.contains("typing"))cursorSpan.classList.add("typing");
+        typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+        charIndex++;
+        setTimeout(type, typingDelay);
+        
+      } 
+      else {
+        cursorSpan.classList.remove("typing");
+        setTimeout(erase, newTextDelay);
+      }
+    }
+    function erase() {
+      if (charIndex > 0) {
+        if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+        typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
+        charIndex--;
+        setTimeout(erase, erasingDelay);
+      } 
+      else {
+        cursorSpan.classList.remove("typing");
+        textArrayIndex++;
+        if(textArrayIndex>=textArray.length) textArrayIndex=0;
+        setTimeout(type, typingDelay + 1100);
+      }
+    }
+    document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
+    if(textArray.length) setTimeout(type, newTextDelay + 250);
+    });
+    function validateform()
+    {
+        var name1 = document.getElementById('fname').value;
+        var ma = document.getElementById('email').value;
+        var phone = document.getElementById('mnum').value;
+        var mas = document.getElementById('massage').value;
+        if(name1 == ""){
+            document.getElementById("blankMsg").innerHTML=" !Fill The Full Name";
+            document.getElementById("fname").style.border="3px solid red";
+            return false;
+        }
+        else if(name1.length<5)
+        {
+            document.getElementById("blankMsg").innerHTML=" !Name is Too Short";
+            document.getElementById("fname").style.border="3px solid red";
+            return false;
+        }
+        else if(!isNaN(name1))
+        {
+            document.getElementById("blankMsg").innerHTML=" !Only Character allowed";
+            document.getElementById("fname").style.border="3px solid red";
+            return false;
+        }
+        else if(phone<10)
+        {
+            document.getElementById("num").innerHTML = " !Please Enter Valid mobile number";
+            document.getElementById("mnum").style.border="3px solid red";
+        }
+        else if(ma == "")
+        {
+            document.getElementById('mail').innerHTML = "!Please Enter Email";
+            document.getElementById("email").style.border="3px solid red";
+        }
+        else if(mas == ""){
+            document.getElementById('massage1').innerHTML = "!Pleases Enter Your Massage";
+            document.getElementById("massage").style.border="3px solid red";
+            alert("Please Enter Massage");
+        }
+        else{
+            alert("Your Massage is Successfully Send");
+        }
+    }
+    var mybutton = document.getElementById("myBtn");
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+    } else {
+    mybutton.style.display = "none";
+    }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    var navlinks = document.getElementById("navlinks");
+
+        function showmenu() {
+            navlinks.style.left = "0"
+        }
+        function hidemenu() {
+            navlinks.style.left = "-40%"
+        }
+	</script>
+</body>
+</html>
